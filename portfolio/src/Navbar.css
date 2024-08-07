@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 1.0); /* Fully opaque white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-brand {
+    margin-right: 1rem; /* Adjust space between brand and links */
+  }
+  
+  .navbar-brand a {
+    color: #50A2A7; /* Highlight color that matches your theme */
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow: auto; /* Adds scroll if content overflows */
+    padding-right: 3.5rem;
+  }
+  
+  .navbar-links a {
+    color: #333; /* Darker color for readability */
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  .navbar-links a:hover {
+    color: #50A2A7; /* Hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the start for better visual flow */
+      padding: 1rem;
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Stack the links vertically */
+      width: 100%; /* Make the links take full width */
+      margin-top: 1rem; /* Add some spacing from the brand */
+      overflow: visible; /* Ensure that links are visible */
+    }
+  
+    .navbar-links a {
+      margin: 0.5rem 0; /* Add vertical spacing between links */
+      padding: 0.5rem; /* Add padding for better touch interaction */
+      width: 100%; /* Make each link take full width */
+      text-align: center; /* Center align the text */
+    }
+  }
+  
+  
+
+
